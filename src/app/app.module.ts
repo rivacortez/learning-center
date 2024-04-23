@@ -11,6 +11,14 @@ import {MatToolbar} from "@angular/material/toolbar";
 import {HttpClientModule} from "@angular/common/http";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
+import { StudentsComponent } from './learning/pages/students/students.component';
+import {MatIconModule} from "@angular/material/icon";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatTableModule} from "@angular/material/table";
+import {MatSortModule} from "@angular/material/sort";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {MatInputModule} from "@angular/material/input";
+
 
 
 
@@ -19,15 +27,34 @@ import {MatButtonModule} from "@angular/material/button";
     AppComponent,
     AboutComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    StudentsComponent
   ],
     imports: [
+
       BrowserModule,
+
       AppRoutingModule,
+
       HttpClientModule,
-      MatToolbarModule,
+
+      MatInputModule,
+
+      FormsModule,
+
+      ReactiveFormsModule,
+
       MatButtonModule,
-      HttpClientModule
+
+      MatTableModule,
+
+      MatSortModule,
+
+      MatIconModule,
+
+      MatPaginatorModule,
+
+      MatToolbarModule,
 
     ],
   providers: [
