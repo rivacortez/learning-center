@@ -1,5 +1,10 @@
 <div class="table-wrapper">
   <h1>Students Catalogue</h1>
+
+  <!-- Edit/Add Form -->
+  <app-student-form (editCanceled)="onCancelEdit()" (studentAdded)="onStudentAdded($event)"
+                    (studentUpdated)="onStudentUpdated($event)" [editMode]="isEditMode" [student]="studentData"/>
+
   <!-- Data Table -->
   <table [dataSource]="dataSource" class="mat-elevation-z8" mat-table matSort>
     <ng-container matColumnDef="id">

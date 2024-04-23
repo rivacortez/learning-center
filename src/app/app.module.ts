@@ -18,6 +18,7 @@ import {MatTableModule} from "@angular/material/table";
 import {MatSortModule} from "@angular/material/sort";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
+import { StudentFormComponent } from './learning/components/student-form/student-form.component';
 
 
 
@@ -28,7 +29,8 @@ import {MatInputModule} from "@angular/material/input";
     AboutComponent,
     HomeComponent,
     PageNotFoundComponent,
-    StudentsComponent
+    StudentsComponent,
+    StudentFormComponent
   ],
     imports: [
 
