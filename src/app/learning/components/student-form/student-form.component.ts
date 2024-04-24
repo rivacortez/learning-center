@@ -12,10 +12,15 @@ export class StudentFormComponent {
   // Attributes
 
   @Input()student: Student;
+
   @ViewChild('studentForm', {static: false}) studentForm!: NgForm;
+
   @Input() editMode = false;
+
   @Output()studentAdded = new EventEmitter<Student>();
+
   @Output()studentUpdated = new EventEmitter<Student>();
+
   @Output()editCanceled = new EventEmitter();
 
   // Constructor
@@ -51,4 +56,3 @@ export class StudentFormComponent {
     this.editCanceled.emit();
   }
 }
-

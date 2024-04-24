@@ -14,6 +14,7 @@ export class PageNotFoundComponent implements OnInit {
   }
 
   // UI Event Handlers
+
   onNavigateHome() {
     this.router.navigate(['home']).then();
   }
@@ -22,6 +23,5 @@ export class PageNotFoundComponent implements OnInit {
   ngOnInit(): void {
     this.invalidUrl = this.route.snapshot.url[0].path;
   }
+
 }
-
-

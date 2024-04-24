@@ -6,10 +6,11 @@ import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-foun
 import {StudentsComponent} from "./learning/pages/students/students.component";
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent},
-  { path:  'about', component: AboutComponent},
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '***', component: PageNotFoundComponent}
+  {path: 'learning/students', component: StudentsComponent},
+  { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

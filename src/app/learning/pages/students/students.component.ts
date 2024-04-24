@@ -112,4 +112,5 @@ export class StudentsComponent implements OnInit, AfterViewInit {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
+
 }

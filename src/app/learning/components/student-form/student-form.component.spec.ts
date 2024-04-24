@@ -10,8 +10,8 @@ describe('StudentFormComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [StudentFormComponent]
     })
-    .compileComponents();
-    
+      .compileComponents();
+
     fixture = TestBed.createComponent(StudentFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

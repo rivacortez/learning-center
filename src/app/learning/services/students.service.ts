@@ -6,7 +6,8 @@ import {Student} from "../model/student.entity";
 @Injectable({
   providedIn: 'root'
 })
-export class StudentsService extends BaseService<Student> {
+export class StudentsService extends BaseService<Student>{
+
   constructor(http: HttpClient) {
     super(http);
     this.resourceEndpoint = '/students';

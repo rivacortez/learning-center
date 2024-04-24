@@ -13,6 +13,7 @@ export class BaseService<T> {
   }
 
   constructor(private http: HttpClient) {
+
   }
 
   handleError(error: HttpErrorResponse) {
@@ -54,4 +55,3 @@ export class BaseService<T> {
     return `${this.basePath}${this.resourceEndpoint}`;
   }
 }
-
